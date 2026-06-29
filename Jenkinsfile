@@ -79,7 +79,7 @@ pipeline {
             steps {
                 echo "Building Docker image..."
 
-                bat 'docker build -t taskmanager:v1 .'
+                bat 'docker build -t %IMAGE_NAME%:%IMAGE_TAG% .'
             }
         }
 
